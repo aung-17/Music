@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Roboto+Condensed&display=swap');
+
+:root{
+    --light: #ffffff;
+    --light-secondary : #e8ebed;;
+    --gray : #6c6c6c;
+    --hover : #b7b6b6;
+    --dark : #333333;
+    --marginer : #4617b4;
+    --primary : #29b8cc;
+    --pink : #f47694;
+    --red : #a12b2f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .music-web{
+} */
+.first-container{
+    display: flex;
+}
+.icon-box{
+    width: 50px;
+    background-color: var(--light-secondary);
+    
+}
+.container{
+    height: 50px;
+    padding: 15px;
+}
+.container:hover{
+    background-color: var(--hover);
+}
+.out-icon-box{
+    margin-top: 70px;
+}
+
+.song-box{
+    width: 100%;
+    padding: 50px 30px 0;
+}
+.song-box .header p{
+    font-size: 40px;
+    font-family: 'Catamaran', sans-serif;
+}
+.cont-box{
+    margin-top: 10px;
+    display: flex;
+}
+.cont{
+    width: 100px;
+}
+.cont p{
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.divider{
+    height: 1px;
+    background-color: var(--dark);
+    margin-top: 5px;
+}
