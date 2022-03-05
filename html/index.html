@@ -4,69 +4,295 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music</title>
+    <link rel="icon" href="../img/musical-note.png" type="image/gif" sizes="16x16">
+    <title>Music Web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Library/feather.css">
 </head>
 <body>
     <section class="music-web">
-
         <div class="first-container">
-            <div class="icon-box">
-                <div class="container">
-                        <i class="fa-solid fa-arrow-left"></i>
+
+            <!-- //icons container// -->
+
+            <div class="icon-box" id="iconBox">
+                <div class="container" onclick="exit()">
+                    <i class=" feather-arrow-left" ></i>
+                </div>
+                <div class="container" onclick="showTextbox()">
+                    <i class="feather-menu"></i>
+                </div>
+                <div class="container" onclick="showTextbox()">
+                    <i class="feather-search"></i>
                 </div>
                 <div class="container">
-                        <i class="fa-solid fa-bars"></i>
+                    <i class="feather-music"></i>
                 </div>
                 <div class="container">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="feather-clock"></i>
                 </div>
                 <div class="container">
-                        <i class="fa-solid fa-music"></i>
+                    <i class="feather-bar-chart-2"></i>
                 </div>
                 <div class="container">
-                    <i class="fa-regular fa-clock"></i>
+                    <i class="feather-list"></i>
                 </div>
                 <div class="container">
-                    <i class="fa-solid fa-signal"></i>
+                    <i class="feather-plus"></i>
                 </div>
-                <div class="container">
-                    <i class="fa-regular fa-circle-play"></i>
-                </div>
-                <div class="container">
-                    <i class="fa-regular fa-plus"></i>
-                </div>
+
                 <div class="out-icon-box">
                     <div class="container">
-                        <i class="fa-solid fa-user-plus"></i>
+                        <i class="feather-user-plus"></i>
                 </div>
                 <div class="container">
-                    <i class="fa-solid fa-life-ring"></i>
+                    <i class="feather-settings"></i>
                 </div>
                 </div>
+                
             </div>
             
-            <div class="text-box"></div>
+            <!-- // text box // -->
+
+            <div class="d-n" id="textBox">
+
+                <div class="control">
+                    <p>Groove Music</p>
+                </div>
+                <div class="control" onclick="showIcon()">
+                    <i class="feather-menu"></i>
+                </div>
+               <div class="control">
+                <div class="input">
+                    <input id="txt" type="text" placeholder="search">
+                    <i class="feather-search"></i>
+                </div>
+               </div>
+
+                <div class="control hover">
+                    <i class="feather-music mm"></i>
+                    <p>My Music</p>
+                </div>
+
+                <div class="control hover">
+                    <i class="feather-clock mm"></i>
+                    <p>Recent Play</p>
+                </div>
+
+                <div class="control hover">
+                    <i class="feather-bar-chart-2 mm"></i>
+                    <p>Now Playing</p>
+                </div>
+
+                <div style=" width: 290px; height: 1px; background-color: black; margin: 0px auto;"></div>
+
+                <div class="control hover">
+                    <i class="feather-list mm"></i>
+                    <p class="pt">Play List</p>
+                    <i class="feather-plus"></i>
+                </div>
+
+                <div style=" width: 290px; height: 1px; background-color: black; margin: 165px auto 0px;"></div>
+
+                <div class="control hover">
+                    <i class="feather-user-plus mm"></i>
+                    <p class="pt">Play List</p>
+                    <i class="feather-settings"></i>
+                </div>
+
+            </div>
+
+
+            <!-- // song box // -->
+
 
             <div class="song-box">
+
+                <!-- //header// -->
+
                 <section class="header">
                     <p>My music</p>
                 </section>
                 
+
+                <!-- //cont box// -->
+
+
                 <section class="cont-box">
                     <div class="cont"><p>Songs</p></div>
                     <div class="cont"><p>Artist</p></div>
                     <div class="cont"><p>Albums</p></div>
                 </section>
+
                 <div class="divider"></div>
+
+              <div class="add-time">
+
+                <div class="">
+                    <span>Shuffle all</span>
+                   </div>
+    
+                    <div class="sort">
+                        <label for="">Sort by:</label>
+                        <select name="" id="">
+                            <option value="">Date added</option>
+                            <option value="">A to Z</option>
+                            <option value="">Artist</option>
+                            <option value="">Album</option>
+                        </select>
+                    </div>
+    
+                    <div class="sort">
+                        <label for="">Genere:</label>
+                        <select name="" id="">
+                            <option value="">All genere</option>
+                            <option value="">Contemporary Pop</option>
+                            <option value="">Inde / Alternative</option>
+                            <option value="">Punk</option>
+                            <option value="">Unknown Genere</option>
+                        </select>
+                    </div>
+              </div>
+
+              <div class="table-box">
+                  <table>
+                      <tbody>
+
+                          <tr>
+                            <td><i class="feather-square"></i> </td>
+                            <td>  Ni Ni Khin Zaw </td>
+                            <td><i class="feather-play"></i></td>
+                            <td><i class="feather-plus"></i></td>
+                            <td>ဘာလိုနေသေးလ့</td>
+                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>Unknown Genere</td>
+                            <td>4:8</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="feather-square"></i> </td>
+                            <td>  Ni Ni Khin Zaw </td>
+                            <td><i class="feather-play"></i></td>
+                            <td><i class="feather-plus"></i></td>
+                            <td>ဘာလိုနေသေးလ့</td>
+                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>Unknown Genere</td>
+                            <td>4:8</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="feather-square"></i> </td>
+                            <td>  Ni Ni Khin Zaw </td>
+                            <td><i class="feather-play"></i></td>
+                            <td><i class="feather-plus"></i></td>
+                            <td>ဘာလိုနေသေးလ့</td>
+                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>Unknown Genere</td>
+                            <td>4:8</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="feather-square"></i> </td>
+                            <td>  Ni Ni Khin Zaw </td>
+                            <td><i class="feather-play"></i></td>
+                            <td><i class="feather-plus"></i></td>
+                            <td>ဘာလိုနေသေးလ့</td>
+                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>Unknown Genere</td>
+                            <td>4:8</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="feather-square"></i> </td>
+                            <td>  Ni Ni Khin Zaw </td>
+                            <td><i class="feather-play"></i></td>
+                            <td><i class="feather-plus"></i></td>
+                            <td>ဘာလိုနေသေးလ့</td>
+                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>Unknown Genere</td>
+                            <td>4:8</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="feather-square"></i> </td>
+                            <td>  Ni Ni Khin Zaw </td>
+                            <td><i class="feather-play"></i></td>
+                            <td><i class="feather-plus"></i></td>
+                            <td>ဘာလိုနေသေးလ့</td>
+                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>Unknown Genere</td>
+                            <td>4:8</td>
+                        </tr>
+                        <tr>
+                            <td><i class="feather-square"></i> </td>
+                            <td>  Ni Ni Khin Zaw </td>
+                            <td><i class="feather-play"></i></td>
+                            <td><i class="feather-plus"></i></td>
+                            <td>ဘာလိုနေသေးလ့</td>
+                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>Unknown Genere</td>
+                            <td>4:8</td>
+                        </tr>
+                        <tr>
+                            <td><i class="feather-square"></i> </td>
+                            <td>  Ni Ni Khin Zaw </td>
+                            <td><i class="feather-play"></i></td>
+                            <td><i class="feather-plus"></i></td>
+                            <td>ဘာလိုနေသေးလ့</td>
+                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>Unknown Genere</td>
+                            <td>4:8</td>
+                        </tr>
+                         
+                      </tbody>
+                  </table>
+              </div>
+
+            </div>
+
+        </div>
+
+        <div class="base-container">
+            <!-- art -->
+            <div class="square">
+                <div class="art-squ">
+                    <div class="cir">
+                        <div class="mark"></div>
+                    </div>
+                </div>
+            </div>
+               
+            <div class="ddd">
+                <div class="music-name">
+                    <p>Ni Ni Khin Zaw</p> 
+   
+                   <p>ဘာလိုနေသေးလဲ</p>
+                   </div>
+   
+               <!-- base play -->
+   
+               <div class="play">
+                   <div class="icon">
+                       <i class="feather-shuffle child"></i>
+                       <i class="feather-skip-back skip"></i>
+                       <i class="feather-play-circle circle"></i>
+                       <i class="feather-skip-forward skip"></i>
+                       <i class="feather-repeat child"></i>
+                   </div>
+   
+                   <div class="line"></div>
+   
+               </div>
+   
+               <div class="voice">
+                   <i class="feather-volume-1"></i>
+                   <div class="voice-line"></div>
+               </div>
             </div>
         </div>
 
-        <div class="second-container">
-
-        </div>
-
     </section>
+    <script src="../javascript/app.js"></script>
 </body>
 </html>
