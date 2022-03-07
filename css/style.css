@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Roboto+Condensed&family=Varela&display=swap');
 
 :root{
     --light: #ffffff;
@@ -63,8 +63,8 @@ option{
     display: none;
 }
 .text-box{
+    /* display: none; */
     display: block;
-    /* padding: 0px 15px; */
     width: 420px;
     height: 567px;
     background-color: var(--light-secondary);
@@ -75,7 +75,6 @@ option{
     width: 100%;
     height: 50px;
     padding: 0px 15px;
-    /* justify-content: space-between; */
 }
 .text-box .hover:hover{
     background-color: var(--hover);
@@ -102,6 +101,36 @@ option{
 }
 .input input:focus{
     outline: none;
+}
+
+/* setting - setting - setting */
+.non-setting{
+    display: none;
+}
+.setting{
+    display: block;
+    width: 300px;
+    height: 400px;
+    background-color: var(--light-secondary);
+    position: absolute;
+    bottom: 110px;
+    left: 15px;
+    box-shadow: 0 0 5px black;
+}
+.setting .ctn{
+    font-family: 'Varela', sans-serif;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.setting .ctn i{
+    font-size: 20px;
+}
+.setting .header p{
+    font-size: 25px;
+    color: var(--dark);
 }
 
 
@@ -155,15 +184,17 @@ table{
     width: 100%;
 }
 table tr{
-    height: 50px;
+    height: 55px;
     background-color: var(--light-secondary);
 }
 table tr td i{
     color: var(--light-secondary);
+    font-size: 18px;
 }
 table tr td{
     text-align: center;
-    font-size: 13px;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 table tr:nth-child(even){
     background-color: var(--light);
@@ -241,7 +272,7 @@ table tr:hover i{
     justify-content: space-between;
     width: 180px;
 }
-.play .icon .circle{
+.play .icon #i{
     color: var(--light);
     font-size: 40px;
 }

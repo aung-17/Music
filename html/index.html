@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/musical-note.png" type="image/gif" sizes="16x16">
-    <title>Music Web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Store</title>
+    <link rel="stylesheet" href="../css/nightMode.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../Library/feather.css">
 </head>
-<body>
+<body  id="body">
     <section class="music-web">
+
+        <!-- first-container first-container -->
+
         <div class="first-container">
 
             <!-- //icons container// -->
@@ -46,8 +49,8 @@
                     <div class="container">
                         <i class="feather-user-plus"></i>
                 </div>
-                <div class="container">
-                    <i class="feather-settings"></i>
+                <div class="container"  >
+                    <i class="feather-settings" onclick="setting()"></i>
                 </div>
                 </div>
                 
@@ -98,14 +101,37 @@
                 <div class="control hover">
                     <i class="feather-user-plus mm"></i>
                     <p class="pt">Play List</p>
-                    <i class="feather-settings"></i>
+                    <i class="feather-settings" onclick="setting()"></i>
                 </div>
 
             </div>
 
+            <!-- setting - setting-setting -->
+
+            <div class="non-setting" id="setting">
+              <div class="header ctn">
+                  <p>Setting</p>
+                  <i class="feather-arrow-left" onclick="back()"></i>
+              </div>
+              <div class="dark-mode ctn">
+                  <p>Dark Mode</p>
+                  <i class="feather-toggle-left" id="DM" onclick="darkMode()"></i>
+              </div>
+              <div class="start-bar ctn">
+                  <p>Start Bar</p>
+                  <i class="feather-toggle-left"></i>
+              </div>
+              <div class="volume ctn">
+                  <p>Volume</p>
+                  <i class="feather-sliders"></i>
+              </div>
+              <div class="resect ctn">
+                  <p>Resect Defult</p>
+                  <i class="feather-toggle-left"></i>
+              </div>
+            </div>
 
             <!-- // song box // -->
-
 
             <div class="song-box">
 
@@ -114,10 +140,8 @@
                 <section class="header">
                     <p>My music</p>
                 </section>
-                
 
                 <!-- //cont box// -->
-
 
                 <section class="cont-box">
                     <div class="cont"><p>Songs</p></div>
@@ -126,6 +150,8 @@
                 </section>
 
                 <div class="divider"></div>
+
+                <!-- selective selective selective selective -->
 
               <div class="add-time">
 
@@ -155,95 +181,24 @@
                     </div>
               </div>
 
+              <!-- table table table table -->
+
               <div class="table-box">
                   <table>
                       <tbody>
 
                           <tr>
                             <td><i class="feather-square"></i> </td>
-                            <td>  Ni Ni Khin Zaw </td>
-                            <td><i class="feather-play"></i></td>
+                            <td>Lin Lin</td>
+                            <td><i class="feather-play" id="Itb" onclick="play()"></i></td>
                             <td><i class="feather-plus"></i></td>
-                            <td>ဘာလိုနေသေးလ့</td>
-                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
+                            <td>အချစ်ရဲ့ရလာဒ်</td>
+                            <td>Unknown Album</td>
                             <td>Unknown Genere</td>
                             <td>4:8</td>
                         </tr>
 
-                        <tr>
-                            <td><i class="feather-square"></i> </td>
-                            <td>  Ni Ni Khin Zaw </td>
-                            <td><i class="feather-play"></i></td>
-                            <td><i class="feather-plus"></i></td>
-                            <td>ဘာလိုနေသေးလ့</td>
-                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
-                            <td>Unknown Genere</td>
-                            <td>4:8</td>
-                        </tr>
-
-                        <tr>
-                            <td><i class="feather-square"></i> </td>
-                            <td>  Ni Ni Khin Zaw </td>
-                            <td><i class="feather-play"></i></td>
-                            <td><i class="feather-plus"></i></td>
-                            <td>ဘာလိုနေသေးလ့</td>
-                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
-                            <td>Unknown Genere</td>
-                            <td>4:8</td>
-                        </tr>
-
-                        <tr>
-                            <td><i class="feather-square"></i> </td>
-                            <td>  Ni Ni Khin Zaw </td>
-                            <td><i class="feather-play"></i></td>
-                            <td><i class="feather-plus"></i></td>
-                            <td>ဘာလိုနေသေးလ့</td>
-                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
-                            <td>Unknown Genere</td>
-                            <td>4:8</td>
-                        </tr>
-
-                        <tr>
-                            <td><i class="feather-square"></i> </td>
-                            <td>  Ni Ni Khin Zaw </td>
-                            <td><i class="feather-play"></i></td>
-                            <td><i class="feather-plus"></i></td>
-                            <td>ဘာလိုနေသေးလ့</td>
-                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
-                            <td>Unknown Genere</td>
-                            <td>4:8</td>
-                        </tr>
-
-                        <tr>
-                            <td><i class="feather-square"></i> </td>
-                            <td>  Ni Ni Khin Zaw </td>
-                            <td><i class="feather-play"></i></td>
-                            <td><i class="feather-plus"></i></td>
-                            <td>ဘာလိုနေသေးလ့</td>
-                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
-                            <td>Unknown Genere</td>
-                            <td>4:8</td>
-                        </tr>
-                        <tr>
-                            <td><i class="feather-square"></i> </td>
-                            <td>  Ni Ni Khin Zaw </td>
-                            <td><i class="feather-play"></i></td>
-                            <td><i class="feather-plus"></i></td>
-                            <td>ဘာလိုနေသေးလ့</td>
-                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
-                            <td>Unknown Genere</td>
-                            <td>4:8</td>
-                        </tr>
-                        <tr>
-                            <td><i class="feather-square"></i> </td>
-                            <td>  Ni Ni Khin Zaw </td>
-                            <td><i class="feather-play"></i></td>
-                            <td><i class="feather-plus"></i></td>
-                            <td>ဘာလိုနေသေးလ့</td>
-                            <td>မျှော်လင့်ချက်တစ်စုံတရာ</td>
-                            <td>Unknown Genere</td>
-                            <td>4:8</td>
-                        </tr>
+                       
                          
                       </tbody>
                   </table>
@@ -252,6 +207,8 @@
             </div>
 
         </div>
+
+        <!-- base-container base-container -->
 
         <div class="base-container">
             <!-- art -->
@@ -276,7 +233,7 @@
                    <div class="icon">
                        <i class="feather-shuffle child"></i>
                        <i class="feather-skip-back skip"></i>
-                       <i class="feather-play-circle circle"></i>
+                       <i class="feather-play-circle" onclick="change()" id="i"></i>
                        <i class="feather-skip-forward skip"></i>
                        <i class="feather-repeat child"></i>
                    </div>

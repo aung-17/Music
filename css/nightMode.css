@@ -1,0 +1,28 @@
+.night-mode{
+    background-color: var(--dark);
+}
+.night-mode .icon-box, .night-mode .text-box{
+    background-color: gray;
+}
+.night-mode .icon-box i, .night-mode .text-box i{
+    color: white;
+}
+
+.night-mode .header p, .night-mode label, .night-mode span{
+    color: white;
+}
+.night-mode .container:hover,.night-mode .text-box .hover:hover{
+    background-color: rgb(99, 96, 96);
+}
+.night-mode select{
+    background-color: black;
+}
+.night-mode option{
+    background-color: white;
+}
+.night-mode table tr{
+    background-color: gray;
+}
+.night-mode table tr i{
+    color: gray;
+}
