@@ -35,7 +35,11 @@ select:focus{
     outline: none;
 }
 option{
+    margin: 5px;
     color: var(--dark);
+}
+body{
+    transition: 0.5s;
 }
 .first-container{
     display: flex;
@@ -132,12 +136,77 @@ option{
     font-size: 25px;
     color: var(--dark);
 }
+/* signin signin sign in */
+
+.signin{
+    display: block;
+    width: 300px;
+    height: 400px;
+    background-color: var(--light);
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    left: 540px;
+   box-shadow: 0 0 5px gray;
+   animation: slowShow 2s;
+}
+.signin .bran{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 25px;
+}
+.signin .bran .logo{
+    width: 40px;
+    margin-bottom: 10px;
+}
+.signin .bran p{
+    font-size: 25px;
+}
+.signin .box{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin: 15px auto;
+}
+.signin .box input{
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 5px;
+}.signin .box input:focus{
+    outline: none;
+}
+.signin .btn{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.signin .acc a{
+    margin: 0px auto;
+}
+.skp{
+    cursor: pointer;
+    position: absolute;
+    top:15px;
+    right: 15px;
+}
+@keyframes slowShow {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 
 
 /* .song-box  song-box song-box */
 
 
 .song-box{
+    /* display: none; */
     width: 100%;
     padding: 50px 25px 0;
 }
@@ -213,6 +282,7 @@ table tr:hover i{
 /* //base-container// */
 
 .base-container{
+    display: block;
     display: flex;
     align-items: center;
     height: 90px;

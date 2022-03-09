@@ -47,6 +47,32 @@ function darkMode(){
         
     }
 }
+// showbar showbar showbar
+
+let shIcon =document.getElementById("SIC")
+let startBar = document.getElementById("startBar")
+function showBar(){
+    if(shIcon.classList=="feather-toggle-left"){
+        shIcon.classList="feather-toggle-right"
+        shIcon.style.color="skyblue"
+        shIcon.style.fontWeight="bolder"
+        startBar.classList.toggle("base-container")
+    }else{
+        shIcon.classList ="feather-toggle-left"
+        shIcon.style.color=""
+        shIcon.style.fontWeight=""
+        startBar.classList.toggle("base-container")
+    }
+}
+// signin signin signin
+let sign = document.getElementById("signin")
+function signIn(){
+    sign.classList.add("signin")
+}
+// skip skip skip
+function Skip(){
+    sign.classList.remove("signin")
+}
 
 let tableIcon = document.getElementById("Itb")
 let audio = new Audio("../Music/lin_lin.mp3")

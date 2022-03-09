@@ -47,7 +47,7 @@
 
                 <div class="out-icon-box">
                     <div class="container">
-                        <i class="feather-user-plus"></i>
+                        <i class="feather-user-plus" onclick="signIn()"></i>
                 </div>
                 <div class="container"  >
                     <i class="feather-settings" onclick="setting()"></i>
@@ -99,8 +99,8 @@
                 <div style=" width: 290px; height: 1px; background-color: black; margin: 165px auto 0px;"></div>
 
                 <div class="control hover">
-                    <i class="feather-user-plus mm"></i>
-                    <p class="pt">Play List</p>
+                    <i class="feather-user-plus mm" onclick="signIn()"></i>
+                    <p class="pt">Sign In</p>
                     <i class="feather-settings" onclick="setting()"></i>
                 </div>
 
@@ -119,7 +119,7 @@
               </div>
               <div class="start-bar ctn">
                   <p>Start Bar</p>
-                  <i class="feather-toggle-left"></i>
+                  <i class="feather-toggle-left" id="SIC" onclick="showBar()"></i>
               </div>
               <div class="volume ctn">
                   <p>Volume</p>
@@ -131,6 +131,31 @@
               </div>
             </div>
 
+            <!-- singin - singin -->
+            <section class="d-n" id="signin">
+            <p class="skp" id="skip" onclick="Skip()">Skip</p>
+                <div class="bran">
+                    <img src="../img/musical-note.png" alt="" class="logo">
+                    <p>Music Store</p>
+                </div>
+                <div class="name box">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="john1@gmail.com">
+                </div>
+                <div class="password box">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="'6'chartes and under scrool">
+                </div>
+                <div class="box">
+                    <button class="btn">Login</button>
+                </div>
+                <div class="acc box">
+                    <a href=""> <p>Forgot Password</p></a>
+                </div>
+                <div class="acc box">
+                    <a href=""><p>Creat Account</p></a>
+                </div>
+            </section>
             <!-- // song box // -->
 
             <div class="song-box">
@@ -210,8 +235,8 @@
 
         <!-- base-container base-container -->
 
-        <div class="base-container">
-            <!-- art -->
+        <div class="d-n" id="startBar">
+            <!-- art  square -->
             <div class="square">
                 <div class="art-squ">
                     <div class="cir">
@@ -219,7 +244,7 @@
                     </div>
                 </div>
             </div>
-               
+               <!-- music name -->
             <div class="ddd">
                 <div class="music-name">
                     <p>Ni Ni Khin Zaw</p> 

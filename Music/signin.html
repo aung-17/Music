@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .signin{
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+            position: absolute;
+            top: 50px;
+            left: 540px;
+           box-shadow: 0 0 5px gray;
+           animation: slowShow 2s;
+        }
+        .signin .bran{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           margin-top: 25px;
+        }
+        .signin .bran .logo{
+            width: 40px;
+            margin-bottom: 10px;
+        }
+        .signin .bran p{
+            font-size: 25px;
+        }
+        .signin .box{
+            display: flex;
+            flex-direction: column;
+            width: 240px;
+            margin: 15px auto;
+        }
+        .signin .box input{
+            height: 35px;
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 2px;
+            margin-top: 5px;
+        }.signin .box input:focus{
+            outline: none;
+        }
+        .signin .btn{
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+        .signin .acc a{
+            margin: 0px auto;
+        }
+        .skip{
+            position: absolute;
+            top:15px;
+            right: 15px;
+        }
+        @keyframes slowShow {
+            0%{
+                transform: translateY(-100px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="signin">
+        <p class="skip" id="skip" onclick="Skip()">Skip</p>
+        <div class="bran">
+            <img src="../img/musical-note.png" alt="" class="logo">
+            <p>Music Store</p>
+        </div>
+        <div class="name box">
+            <label for="">Email</label>
+            <input type="text" placeholder="john1@gmail.com">
+        </div>
+        <div class="password box">
+            <label for="">Password</label>
+            <input type="password" placeholder="'6'chartes and under scrool">
+        </div>
+        <div class="box">
+            <button class="btn">Login</button>
+        </div>
+        <div class="acc box">
+            <a href=""> <p>Forgot Password</p></a>
+        </div>
+        <div class="acc box">
+            <a href=""><p>Creat Account</p></a>
+        </div>
+    </section>
+</body>
+</html>

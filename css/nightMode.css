@@ -1,28 +1,74 @@
+
+:root{
+    --dark : #000000;
+    --dark-secondary : #3b3b3b;
+    --dark-third : #616060;
+    --dark-hover : #7a7a7a;
+    --light : #ffffff;
+    --light-secondary : #c2c2c2;
+    --primary : #197583;
+}
 .night-mode{
     background-color: var(--dark);
 }
 .night-mode .icon-box, .night-mode .text-box{
-    background-color: gray;
+    background-color: var(--dark-third);
+}
+.night-mode .icon-box p,.night-mode .text-box p{
+    color: var(--light-secondary);
+}
+.night-mode .input{
+    background-color: var(--dark-secondary);
+}
+.night-mode .input input{
+     background-color: var(--dark-secondary);
+     color: var(--light-secondary);
 }
 .night-mode .icon-box i, .night-mode .text-box i{
-    color: white;
+    color: var(--light-secondary);
 }
 
 .night-mode .header p, .night-mode label, .night-mode span{
-    color: white;
+    color: var(--light-secondary);
 }
 .night-mode .container:hover,.night-mode .text-box .hover:hover{
-    background-color: rgb(99, 96, 96);
+    background-color: var(--dark-hover);
 }
 .night-mode select{
     background-color: black;
 }
 .night-mode option{
-    background-color: white;
+    background-color: var(--dark-third);
+    color: var(--light-secondary);
 }
 .night-mode table tr{
-    background-color: gray;
+    background-color: var(--dark-third);
+}
+.night-mode table tr:hover{
+    background-color: var(--dark-hover);
+}
+.night-mode table tr:hover i{
+    color: var(--light-secondary);
+}
+.night-mode table td{
+    color: var(--light-secondary);
 }
 .night-mode table tr i{
-    color: gray;
+    color: var(--dark-third);
+}
+.night-mode .base-container{
+    background-color: var(--dark-third) !important;
+}
+.night-mode .base-container i{
+    color: var(--light-secondary) !important;
+}
+.night-mode .setting{
+    background-color: var(--dark-third);
+    box-shadow: 0px 0px 5px var(--light);
+}
+.night-mode .ctn p, .night-mode .setting i{
+    color: var(--light-secondary);
+}
+.night-mode .header p{
+    color: var(--light-secondary) !important;
 }
