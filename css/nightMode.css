@@ -72,3 +72,6 @@
 .night-mode .header p{
     color: var(--light-secondary) !important;
 }
+.night-mode .signin{
+    background-color: var(--dark-third);
+}
